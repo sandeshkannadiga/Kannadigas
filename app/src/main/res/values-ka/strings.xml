@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ಕನ್ನಡ.ಇನ್</string>
+    <string name="latest">Latest</string>
+    <string name="category">category</string>
+    <string name="previous_play">Previous Play</string>
+    <string name="local_jobs">Local Jobs</string>
+    <string name="account">Account</string>
+</resources>

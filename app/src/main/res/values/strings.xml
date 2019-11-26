@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kannada.in</string>
+    <string name="latest">Latest</string>
+    <string name="category">category</string>
+    <string name="previous_play">Previous Play</string>
+    <string name="local_jobs">Local Jobs</string>
+    <string name="account">Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

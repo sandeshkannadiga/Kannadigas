@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/latest">
+
+
+    <fragment
+        android:id="@+id/latest"
+        android:name="com.iramtech.parking.demo.kannadain.view.Latest"
+        android:label="Latest Videos"
+        tools:layout="@layout/fragment_latest">
+
+        <argument
+            android:name="title"
+            android:defaultValue="latest" />
+
+        <action
+            android:id="@+id/item"
+            app:destination="@+id/play"/>
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/categories"
+        android:name="com.iramtech.parking.demo.kannadain.view.Categories"
+        android:label="Categories"
+        tools:layout="@layout/fragment_categories">
+
+        <argument
+            android:name="title"
+            android:defaultValue="categories" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/play"
+        android:name="com.iramtech.parking.demo.kannadain.view.Play"
+        android:label="Previous Videos"
+        tools:layout="@layout/fragment_play">
+
+        <argument
+            android:name="title"
+            android:defaultValue="play" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/job"
+        android:name="com.iramtech.parking.demo.kannadain.view.Job"
+        android:label="Jobs"
+        tools:layout="@layout/fragment_job">
+
+        <argument
+            android:name="title"
+            android:defaultValue="job" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/account"
+        android:name="com.iramtech.parking.demo.kannadain.view.Account"
+        android:label="My Account"
+        tools:layout="@layout/fragment_account">
+
+        <argument
+            android:name="title"
+            android:defaultValue="account" />
+
+    </fragment>
+
+</navigation>
