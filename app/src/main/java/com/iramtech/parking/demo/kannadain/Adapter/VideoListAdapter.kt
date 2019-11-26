@@ -42,5 +42,5 @@ class VideoListAdapter(val videoList:ArrayList<VideoData>):RecyclerView.Adapter<
 
     //class VideoListViewHolder(var view: View): RecyclerView.ViewHolder(view)
     class VideoListViewHolder(var view: ItemVideoBinding): RecyclerView.ViewHolder(view.root)
-
+ 
 }
