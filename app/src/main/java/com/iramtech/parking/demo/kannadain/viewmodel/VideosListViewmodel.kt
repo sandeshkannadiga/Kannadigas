@@ -1,5 +1,8 @@
 package com.iramtech.parking.demo.kannadain.viewmodel
 
+import android.graphics.Bitmap
+import android.media.MediaMetadataRetriever
+import android.os.Build
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.iramtech.parking.demo.kannadain.model.VideoData
@@ -12,6 +15,8 @@ class VideosListViewmodel:ViewModel(){
 
 
     fun refresh(){
+
+
         val data1 = VideoData("01","","IT","Easy way to install android studio",
             "Install Android Studio",5)
 
@@ -24,4 +29,5 @@ class VideosListViewmodel:ViewModel(){
         videosLoadError.value=false
         loading.value=false
     }
+
 }

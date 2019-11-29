@@ -27,6 +27,7 @@ class Play : Fragment(), Player.EventListener {
     private var playWhenReady = true
     private var currentWindow = 0
     private var playbackPosition: Long = 0
+    private val url by lazy(LazyThreadSafetyMode.NONE) { arguments?.getString("url") ?: "" }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -103,7 +104,7 @@ class Play : Fragment(), Player.EventListener {
         */
 
         var uri: Uri =
-            Uri.parse("http://marwadijodi.co.in/kannada.in/video/1280.avi")
+            Uri.parse(url)
 
 
         var mediaSource: MediaSource = buildMediaSource(uri)

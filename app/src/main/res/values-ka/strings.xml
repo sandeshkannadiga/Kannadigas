@@ -1,8 +1,14 @@
 <resources>
     <string name="app_name">ಕನ್ನಡ.ಇನ್</string>
-    <string name="latest">Latest</string>
-    <string name="category">category</string>
-    <string name="previous_play">Previous Play</string>
-    <string name="local_jobs">Local Jobs</string>
-    <string name="account">Account</string>
+        <string name="latest">Latest</string>
+        <string name="category">category</string>
+        <string name="previous_play">Previous Play</string>
+        <string name="local_jobs">Local Jobs</string>
+        <string name="account">Account</string>
+
+        <!-- TODO: Remove or change this placeholder text -->
+        <string name="hello_blank_fragment">Hello blank fragment</string>
+        <string name="facebook_app_id">546689465907684</string>
+        <!--<string name="fb_login_protocol_scheme">fb546689465907684</string>-->
+
 </resources>
