@@ -53,14 +53,14 @@
 
 
     <fragment
-        android:id="@+id/job"
-        android:name="com.iramtech.parking.demo.kannadain.view.Job"
-        android:label="Jobs"
-        tools:layout="@layout/fragment_job">
+        android:id="@+id/uploadvideo"
+        android:name="com.iramtech.parking.demo.kannadain.view.Upload"
+        android:label="Upload Videos"
+        tools:layout="@layout/fragment_upload">
 
         <argument
             android:name="title"
-            android:defaultValue="job" />
+            android:defaultValue="uploadvideo" />
 
     </fragment>
 

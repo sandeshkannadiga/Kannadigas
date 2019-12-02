@@ -31,7 +31,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="sandesh"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="normal"
@@ -45,7 +44,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="sandeshsandy325@gmail.com"
         android:textColor="@color/black"
         android:textSize="13sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -53,23 +51,37 @@
         app:layout_constraintTop_toBottomOf="@+id/name"/>
 
     <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_button"
+        xmlns:fb="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fblogin_button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
         app:layout_constraintTop_toBottomOf="@+id/email"
-        android:visibility="visible"/>
+        app:layout_constraintLeft_toRightOf="@+id/Gmaillogin_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        android:visibility="visible" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/Gmaillogin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/fblogin_button"
+        app:layout_constraintHeight_percent="0.06"
+        />
+
 
     <TextView
         android:id="@+id/followers_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/login_button"
+        app:layout_constraintTop_toBottomOf="@+id/Gmaillogin_button"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/following_count"
         android:text="120"
@@ -82,7 +94,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/login_button"
+        app:layout_constraintTop_toBottomOf="@+id/Gmaillogin_button"
         app:layout_constraintLeft_toRightOf="@+id/followers_count"
         app:layout_constraintRight_toLeftOf="@+id/post_count"
         android:text="177"
@@ -95,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/login_button"
+        app:layout_constraintTop_toBottomOf="@+id/Gmaillogin_button"
         app:layout_constraintLeft_toRightOf="@+id/following_count"
         app:layout_constraintRight_toRightOf="parent"
         android:text="90"

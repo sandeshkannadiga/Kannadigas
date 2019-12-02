@@ -30,6 +30,4 @@
     app:layout_constraintBottom_toBottomOf="parent"
     app:itemIconTint="@drawable/selector"/>
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

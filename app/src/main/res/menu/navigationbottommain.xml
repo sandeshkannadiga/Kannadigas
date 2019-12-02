@@ -17,9 +17,9 @@
         android:title="@string/previous_play" />
 
     <item
-        android:id="@+id/job"
-        android:icon="@drawable/job"
-        android:title="@string/local_jobs" />
+        android:id="@+id/uploadvideo"
+        android:icon="@drawable/upload"
+        android:title="@string/upload" />
 
     <item
         android:id="@+id/account"
